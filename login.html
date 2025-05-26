@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - CONNAISSANCE-INFO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo ISTAE" class="logo">
+      <h1>CONNAISSANCE-INFO</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="login.html">Connexion</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <div class="login-form">
+      <h2>Connexion à votre espace etudiant</h2>
+      <input type="text" id="login-username" placeholder="Nom d'utilisateur"><br><br>
+      <input type="password" id="login-password" placeholder="Mot de passe"><br><br>
+      <button class="btn" onclick="login()">Se connecter</button>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ISTAE - Tous droits réservés</p>
+  </footer>
+
+ <script>
+    function login() {
+      const username = document.getElementById('login-username').value;
+      const password = document.getElementById('login-password').value;
+
+      // Vérification simple (à remplacer avec votre système réel)
+      if (password === 'CI4448285') {
+        localStorage.setItem('username', username);
+        window.location.href = 'dashboard.html';
+      } else {
+        alert('Identifiants incorrects');
+      }
+    }
+  </script>
+</body>
+</html>
