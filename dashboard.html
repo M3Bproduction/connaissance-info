@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - Étudiant CONNAISSANCE-INFO</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo ISTAE" class="logo">
+        <h1>CONNAISSANCE-INFO</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a onclick="logout()">Déconnexion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dashboard">
+        <h2>Bienvenue, <span id="student-name"></span> !</h2>
+
+        <div class="dashboard-content">
+          <div class="card">
+            <h3>Infos important</h3>
+            <h4>Le 01 Juin 2025 : Sortie de fin d'année</h4>
+            <p>Cotisation : 7000 KMF</p>
+            <p>Destination : MALOUDJA</p>
+          </div>
+          <!--<div class="card">
+            <h3>Infos important</h3>
+            <p>Pas de nouvelles information important</p>
+          </div>
+        </div>-->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ISTAE - Tous droits réservés</p>
+    </footer>
+
+     <script>
+    window.onload = function () {
+      const user = localStorage.getItem('username');
+      if (user) {
+        document.getElementById('student-name').innerText = user;
+      } else {
+        // Si aucun utilisateur, rediriger vers login
+        window.location.href = 'login.html';
+      }
+    };
+
+    function logout() {
+      localStorage.removeItem('username');
+      window.location.href = 'login.html';
+    }
+  </script>
+
+  </body>
+</html>
