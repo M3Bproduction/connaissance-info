@@ -207,4 +207,8 @@ footer {
     margin-right: 0.5rem;
     padding: 0.2rem;
   }
+
+  .card img{
+    width: 45%;
+  }
 }
