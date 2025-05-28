@@ -207,6 +207,14 @@ footer {
     background-color: #1ebe57;
   }
 
+  .temoi{
+    text-align: left;
+  }
+
+  .auteur{
+    text-align: right;
+  }
+
 /*Styles responsives*/
 @media(max-width: 600px){
 
