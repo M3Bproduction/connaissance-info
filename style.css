@@ -59,7 +59,7 @@ nav a {
   margin: 0;
   padding: 0;
   align-content: center;
-  background-image: url("DSC_0007.png");
+  background: linear-gradient(to bottom, #04ccff, #b3a3aa);
 }
 
 .category-list{
