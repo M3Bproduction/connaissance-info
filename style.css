@@ -262,6 +262,10 @@ footer {
       font-weight: bold;
     }
 
+    .photo{
+      background-color: skyblue;
+    }
+
 /*Styles responsives*/
 @media(max-width: 600px){
 
