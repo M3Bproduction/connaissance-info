@@ -208,12 +208,8 @@ footer {
   }
 
   .temoi{
-    text-align: left;
+    text-align: justify;
   }
-
-  /*.auteur{
-    text-align: right;
-  }*/
 
   .contact-container {
       max-width: 800px;
