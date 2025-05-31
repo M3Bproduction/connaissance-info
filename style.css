@@ -211,9 +211,9 @@ footer {
     text-align: left;
   }
 
-  .auteur{
+  /*.auteur{
     text-align: right;
-  }
+  }*/
 
   .contact-container {
       max-width: 800px;
@@ -266,6 +266,17 @@ footer {
       background-color: skyblue;
     }
 
+.temoinage{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.temoinage img{
+  width: 20%;
+
+}
 /*Styles responsives*/
 @media(max-width: 600px){
 
