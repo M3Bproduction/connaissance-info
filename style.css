@@ -258,20 +258,55 @@ footer {
       font-weight: bold;
     }
 
-    .photo{
+    .photos{
       background-color: skyblue;
     }
 
-.temoinage{
-  background-color: #004080;
-  color: #ffffff;
-  padding: 1rem;
+/* Témoignage */
+
+.carte {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.photo {
+  flex: 1;
+  min-width: 280px;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 500px;
+}
+
+.texte {
+  flex: 2;
+  padding: 2rem;
+}
+
+.texte h3 {
+  color: #005baa;
+  margin-bottom: 1rem;
+}
+
+.signature {
+  font-weight: bold;
+  color: #0077cc;
   margin-top: 1rem;
 }
 
-.temoinage img{
-  width: 50%;
+mark{
+  background-color: #005baa;
+  color: white;
+  padding: 0.2rem;
+}
 
+strong, b{
+  color: #005baa;
 }
 /*Styles responsives*/
 @media(max-width: 600px){
@@ -306,5 +341,13 @@ footer {
   .contact-methods {
     display: flex;
     align-items: center;
+  }
+
+  .carte {
+    flex-direction: column;
+  }
+
+  .photo {
+    height: 250px;
   }
 }
